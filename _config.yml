@@ -9,7 +9,7 @@
 title: Samarth Kulshreshtha
 email: smkuls@gmail.com
 admin_name: Samarth Kulshreshtha
-description: > # this means to ignore newlines until "baseurl:"
+description: > # this is to ignore newlines until "baseurl:"
         localhost@SamarthKulshreshtha
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http://smkuls.github.io" # the base hostname & protocol for your site
