@@ -53,20 +53,70 @@ $on-laptop:        800px;
         "bootstrap"
 ;
 
-
 .navbar-custom {
-    background-color:#229922;
-    color:#ffffff;
+    background-color:#1D1D1D;
     border-radius:0;
 }
 
 .navbar-custom .navbar-nav > li > a {
     color:#fff;
 }
-.navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
-    color: #ffffff;
-    background-color:transparent;
+.navbar-custom .navbar-nav > .active > a, .navbar-custom .navbar-nav > .active > a:hover, .navbar-custom .navbar-nav > .active > a:focus{
+	background-color:#1D1D1D;
+	color:#FFFFFF;
+    border-bottom: 3px solid #FFD540;
 }
-.navbar-custom .navbar-brand {
-    color:#eeeeee;
+
+.navbar-custom .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+	background-color:#1D1D1D;
+	color:#FFFFFF;
+    border-bottom: 3px solid #FFD540;
 }
+.jumbotron {
+	background: no-repeat center right fixed url(images/background.jpg);
+
+	-webkit-background-size: 100%; 
+    -moz-background-size: 100%; 
+    -o-background-size: 100%; 
+    background-size: 100%; 
+	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/background.jpg', sizingMethod='scale')";
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/background.jpg', sizingMethod='scale');
+	
+	margin-bottom: 0px;
+	padding: 0px;
+}  
+/*.jumbotron:before { 
+	border: 1px solid #FFFFFF;
+	bottom: 30px;
+	content: "";
+	left: 30px;
+	position: absolute;
+	right: 30px;
+	top: 30px;
+}*/
+.jumbotron .overlay { background-color: #FFD540; position: absolute; top: 0px; bottom: 0px; left: 0px; right: 0px; filter:alpha(opacity=75); z-index: 2; }
+
+.jumbotron .container { position: relative; top: 28%; z-index: 4; text-align: center; }
+.jumbotron .container > * { text-align: center; color: #FFFFFF; }
+.jumbotron .container h1 { padding-bottom: 20px; border-bottom: 1px solid #FFFFFF; border-bottom-color: rgba(255,255,255,0.35); display: inline-block; }
+.jumbotron .container .lead { font-size: 28px; }
+.jumbotron .scroll-down { height: 80px; width: 110px; display: block; position: absolute; bottom: 0px; right: 5%; background-color: #222222; text-align: center; z-index: 6; }
+.jumbotron .scroll-down .glyphicon { 
+	color: #FFFFFF; 
+	font-size: 30px; 
+	padding-right: 2px; 
+	padding-top: 20px; 
+	
+	animation-name: wiggle;
+	animation-duration: 1.2s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+}
+.jumbotron .scroll-down:hover .glyphicon { padding-top: 25px; }

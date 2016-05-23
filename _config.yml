@@ -8,6 +8,7 @@
 # Site settings
 title: Samarth Kulshreshtha
 email: smkuls@gmail.com
+admin_name: Samarth Kulshreshtha
 description: > # this means to ignore newlines until "baseurl:"
         localhost@SamarthKulshreshtha
 baseurl: "/" # the subpath of your site, e.g. /blog
