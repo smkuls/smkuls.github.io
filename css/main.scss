@@ -119,3 +119,27 @@ $on-laptop:        800px;
 	animation-direction: normal;
 }
 .jumbotron .scroll-down:hover .glyphicon { padding-top: 25px; }
+
+@keyframes wiggle {
+    0% {
+        padding-top: 20px;
+    }
+    50% {
+        padding-top: 28px;
+    }
+    100% {
+        padding-top: 20px;
+    }
+}
+
+@-webkit-keyframes wiggle {
+    0% {
+        padding-top: 20px;
+    }
+    50% {
+        padding-top: 28px;
+    }
+    100% {
+        padding-top: 20px;
+    }
+}
