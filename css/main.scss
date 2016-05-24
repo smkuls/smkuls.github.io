@@ -175,6 +175,9 @@ $on-laptop:        800px;
 .list-inline>li {
     margin-right: 30px;
 }
+.last{
+    margin-right: 0;
+}
 @media (max-width: 767px) { 
 	.jumbotron:before {
 		bottom: 100px;
@@ -189,7 +192,7 @@ $on-laptop:        800px;
 		margin-bottom:50px;
 	}
 	.jumbotron .container { top: 20%; padding-top: 0px; }
-	.jumbotron .scroll-down { width: 100%; right: 0px; position: relative; }
+	.jumbotron .scroll-down { height:70px; width: 100%;	 position: relative; }
 
 	.navbar  { left: 0px; width: 100%; }
 	.navbar .nav > li { height: 60px; }
