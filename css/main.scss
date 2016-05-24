@@ -167,14 +167,15 @@ $on-laptop:        800px;
     font-size: 3em;
 }
 
-.list-inline
-{
-	margin-top: 50px;
-	margin-bottom:80px;
-}
-.list-inline>li {
-    margin-right: 30px;
-}
+#social_icon_list
+	{
+		margin-top: 50px;
+		margin-bottom:173px;
+	}
+#social_icon_list>li
+	{
+		padding:-120px;
+	}
 @media (max-width: 767px) { 
 	.jumbotron:before {
 		bottom: 100px;
@@ -186,7 +187,11 @@ $on-laptop:        800px;
 	#social_icon_list
 	{
 		margin-top: 30px;
-		margin-bottom:50px;
+		margin-bottom:30px;
+	}
+	#social_icon_list>li
+	{
+		padding:20px;
 	}
 	.jumbotron .container { top: 20%; padding-top: 0px; }
 	.jumbotron .scroll-down { width: 100%; right: 0px; position: relative; }
