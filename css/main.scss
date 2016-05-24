@@ -78,12 +78,11 @@ $on-laptop:        800px;
     -moz-background-size: 100%; 
     -o-background-size: 100%; 
     background-size: 100%; 
-	
+	background-color: #FF9900;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	
 	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/background.jpg', sizingMethod='scale')";
 	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/background.jpg', sizingMethod='scale');
 	
@@ -103,9 +102,9 @@ $on-laptop:        800px;
 
 .jumbotron .container { position: relative; top: 28%; z-index: 4; text-align: center; }
 .jumbotron .container > * { text-align: center; color: #FFFFFF; }
-.jumbotron .container h1 { color: #000000;padding-bottom: 20px; border-bottom: 1px solid #FFFFFF; border-bottom-color: rgba(255,255,255,0.35); display: inline-block; }
-.jumbotron .container .lead { font-size: 28px; }
-.jumbotron .scroll-down { height: 80px; width: 110px; display: block; position: absolute; bottom: 0px; right: 5%; background-color: #222222; text-align: center; z-index: 6; }
+.jumbotron .container h1 { font-family: 'Lato', sans-serif; color: #000000; padding-bottom:30px; padding-top:20px; border-bottom: 1px solid #FFFFFF; border-bottom-color: rgba(255,255,255,0.35); display: inline-block; }
+.jumbotron .container .lead { font-family: 'Arvo', serif; font-size: 28px; }
+.jumbotron .scroll-down { height: 80px; width: 100%; display: block; position: relative; background-color: #222222; text-align: center; z-index: 6; }
 .jumbotron .scroll-down .glyphicon { 
 	color: #FFFFFF; 
 	font-size: 30px; 
@@ -153,11 +152,81 @@ $on-laptop:        800px;
 	color: #FFFFFF;
 }
 
-.avatar {
+#avatar {
     width:128px;
-    margin-top:30px;
+    margin-top:80px;
     border: 2px solid white;
     border-radius: 1500px;
     -webkit-border-radius: 150px;
     -moz-border-radius: 150px;
+}
+
+#social_icon
+{
+	color: #000;
+    font-size: 3em;
+}
+
+.list-inline
+{
+	margin-top: 20px;
+	margin-bottom:41px;
+}
+.list-inline>li {
+    margin-right: 30px;
+}
+@media (max-width: 767px) { 
+	.jumbotron:before {
+		bottom: 100px;
+		left: 20px;
+		right: 20px;
+		top: 20px;		
+	}
+
+	#social_icon_list
+	{
+		display: block;
+		margin-top: 30px;
+		margin-bottom:50px;
+	}
+	.jumbotron .container { top: 20%; padding-top: 0px; }
+	.jumbotron .scroll-down { width: 100%; right: 0px; position: relative; }
+
+	.navbar  { left: 0px; width: 100%; }
+	.navbar .nav > li { height: 60px; }
+	.navbar .nav > li a { height: 60px; text-align: center; padding-top: 20px; font-weight: 600; color: #FFFFFF; }
+	
+	.fixed .navbar { top: 0px; }
+	
+	.container { padding: 0px 20px; min-width: 280px; }
+	.hidden-phone { display: none; }
+	
+	#profile .row * { text-align: center; }
+	
+	#experiences .experience .experience-details > span { display: block; margin-bottom: 6px; }
+	#experiences .experience .experience-details .seperator { display: none; }
+	
+	#interests .left { float: none; }
+	#interests .right { float: none; }
+	
+	#interests > * { text-align: center; }
+	#interests img { width: 50%; height: auto; float: none !important; } 
+	#interests .interest-content { padding: 20px 0px; }
+	
+	#contact { padding-bottom: 60px; }
+	#contact a .icon { float: left; margin-right: 10px; }
+}    
+
+@media only screen and (orientation: portrait) and (max-width: 767px)  {
+    .jumbotron {
+      -webkit-background-size: auto 150%;
+      background-attachment: scroll;
+    }
+}
+@media only screen and (orientation: landscape) and (max-width: 767px)  {
+
+    .jumbotron {
+      -webkit-background-size: 150% auto;
+      background-attachment: scroll;
+    }
 }

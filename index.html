@@ -1,15 +1,41 @@
 ---
-layout: page
+layout: default
 ---
-<div id="top" class="jumbotron" data-src="/view/images/taxi_drive_by_animation.gif" data-position="center center">
+<div id="top" class="jumbotron" data-position="center center">
     <div class="container">
-        <img class="avatar" src="{{site.url}}/img/avatar.jpg">
-        <h1>{{ site.admin_name }}</h1>
+        <img id="avatar" src="{{site.url}}/img/avatar.jpg">
     </div>
-    <div class="overlay"></div>
+    <div class="container">
+        <h1>{{ site.admin_name }}</h1>
+        <p class="lead">Software Engineer. Developer.</p>
+    </div>
+        <div class="container">
+        <ul id="social_icon_list" class="list-inline">
+            <li><a href="https://www.twitter.com/smkuls" target="_blank"><i id ="social_icon" class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/smkuls" target="_blank"><i id ="social_icon" class="fa fa-linkedin"></i></a></li>
+            <li><a href="mailto:smkuls@gmail.com"><i id ="social_icon" class="fa fa-envelope-o"></i></a></li>
+            <li><a href="https://github.com/smkuls" target="_blank"><i id ="social_icon" class="fa fa-github"></i></a></li>
+        </ul>
+    </div>
+    <!-- <div class="container">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <a href="https://www.twitter.com/smkuls" target="_blank"><i id ="social_icon" class="fa fa-twitter"></i></a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="https://www.linkedin.com/in/smkuls" target="_blank"><i id ="social_icon" class="fa fa-linkedin"></i></a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="mailto:smkuls@gmail.com"><i id ="social_icon" class="fa fa-envelope-o"></i></a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="https://github.com/smkuls" target="_blank"><i id ="social_icon" class="fa fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </div> -->
     <a href="#profile" class="scroll-down">
         <span class="glyphicon glyphicon-chevron-down"></span>
     </a>
 </div>
-
-
