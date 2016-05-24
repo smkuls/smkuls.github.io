@@ -167,17 +167,6 @@ $on-laptop:        800px;
     font-size: 3em;
 }
 
-#social_icon_container
-{
-	margin-top: 70px;
-	margin-bottom: 75px ;
-}
-
-.padding
-{
-	padding:0px !important;
-}
-
 .list-inline
 {
 	margin-top: 50px;
@@ -185,9 +174,6 @@ $on-laptop:        800px;
 }
 .list-inline>li {
     margin-right: 30px;
-}
-.list-inline>li:last-child {
-    margin-right: 0px;
 }
 @media (max-width: 767px) { 
 	.jumbotron:before {
