@@ -130,19 +130,14 @@ img
   margin:0px;
 }
 #avatar {
-    margin-top:-110px;  
+    //margin-top:-110px;  
+    margin-top:-10%;  
     border: 2px solid white;
+
 }
 .center
 {
   text-align: center;
-}
-@media (max-width: 200px) 
-{
-  #avatar 
-  {
-    margin-top:-60px;
-  }
 }
 
 @media (max-width: 767px) 
@@ -152,19 +147,29 @@ img
     width:156px;
     margin-top:-80px;
   }
+  .container 
+  {
+    padding-top:10px;
+  }
+  .container h1
+  {
+    padding-bottom: 5px;
+  }
 }
 
 .container
 {
   text-align: center;
-  padding-top: 18px;
+  //padding-top: 18px;
+  padding-top: 2%;
 }
 
 .container h1
 {
   font-family: 'Lato', sans-serif; 
   color: $white_color;
-  padding-bottom: 10px; 
+  //padding-bottom: 10px; 
+  padding-bottom: 1%; 
   border-bottom: 1px solid #FFFFFF;
   border-bottom-color: rgba(255,255,255,0.35);  
   display:inline-block; 
@@ -181,7 +186,8 @@ img
 }
 .scroll-down .glyphicon { 
   color: $yellow_color; 
-  padding-top: 10px; 
+  //padding-top: 10px; 
+  padding-top: 5%; 
   animation-name: wiggle;
   animation-duration: 1.2s;
   animation-timing-function: linear;
@@ -192,24 +198,30 @@ img
 
 @keyframes wiggle {
     0% {
-        padding-top: 10px;
+        //padding-top: 10px;
+        padding-top: 2%;
     }
     50% {
-        padding-top: 18px;
+        //padding-top: 18px;
+        padding-top: 2.5%;
     }
     100% {
-        padding-top: 10px;
+        //padding-top: 10px;
+        padding-top: 2%;
     }
 }
 
 @-webkit-keyframes wiggle {
-    0% {
-        padding-top: 10px;
+   0% {
+        //padding-top: 10px;
+        padding-top: 2%;
     }
     50% {
-        padding-top: 18px;
+        //padding-top: 18px;
+        padding-top: 2.5%;
     }
     100% {
-        padding-top: 10px;
+        //padding-top: 10px;
+        padding-top: 2%;
     }
 }
