@@ -53,17 +53,68 @@ $navigation-bar-background:     #2D2E2F;
         "bootstrap"
 ;
 
-html, body {
+/************************************** global *************************************/
+
+html, body 
+{
   height:100%;
+  width:100%;
   padding-top: 25px;
 }
 
+img
+{
+  margin:0px;
+}
 
-// navigation bar
+/************************************** global *************************************/
+
+/************************************** general *************************************/
+
+.bg-yellow
+{
+  background-color: $yellow-color;
+}
+
+.bg-black
+{
+  background-color: #1D1D1D;
+}
+
+.yellow
+{
+  color: $yellow-color;
+}
+
+.white
+{
+  color: $white-color;
+}
+
+.center
+{
+  text-align: center;
+}
+
+.full-height 
+{
+  height:100%;
+}
+
+.full-width 
+{
+  width:100%;
+}
+
+/************************************** general *************************************/
+
+/********************************** navigation bar **********************************/
+
 .navbar-custom
 {
 	background-color: $navigation-bar-background;	
 }
+
 .navbar-custom .navbar-nav > .active > a
 {
 	background-color: $navigation-bar-background;
@@ -75,8 +126,10 @@ html, body {
 	margin-right: 10px;
 }
 
+/********************************** navigation bar **********************************/
 
-// navigation bar tabs
+/******************************* navigation bar tabs ********************************/
+
 #navigationBarTabs > li > a
 {
 	color: $white_color;
@@ -98,47 +151,152 @@ html, body {
 	margin-right:10px;
 }
 
-.bg-yellow
-{
-	background-color: $yellow-color;
-}
+/******************************* navigation bar tabs ********************************/
 
-.bg-black
-{
-  background-color: #1D1D1D;
-}
-
-.yellow
-{
-	color: $yellow-color;
-}
-.white
-{
-	color: $white-color;
-}
+/************************************** profile *************************************/
 
 #profile
 {
 	min-height:33%;  
 }
+
 #profile-content
 {
   min-height:67%;  
 }
-img
-{
-  margin:0px;
-}
-#avatar {
-    //margin-top:-110px;  
+
+#avatar 
+{    
     margin-top:-10%;  
     border: 2px solid white;
-
 }
-.center
+
+.container
 {
   text-align: center;
+  padding-top: 2%;
 }
+
+.container h1
+{
+  font-family: 'Lato', sans-serif; 
+  color: $white_color;
+  border-bottom: 1px solid #FFFFFF;
+  border-bottom-color: rgba(255,255,255,0.35);  
+  display:inline-block; 
+}
+
+.container .lead 
+{
+    font-family: 'Arvo', serif;
+    font-size: 20px;
+}
+
+#social-icons > li > a
+{
+    font-size: 3em;
+    color: $white_color;
+}
+
+#social-icons > li > a:hover
+{
+    color: $yellow_color;
+}
+
+.scroll-down .glyphicon 
+{ 
+  color: $yellow_color; 
+  padding-left:12px; 
+  padding-top: 5%; 
+  animation-name: wiggle;
+  animation-duration: 1.2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+.scroll-down:hover .glyphicon 
+{ 
+  padding-top: 25px; 
+  color: $white_color;
+}
+
+/************************************** profile *************************************/
+
+/************************************** skills **************************************/
+#skills
+{
+  background-color:$yellow-color;
+  height:100%;
+}
+
+#skills .row
+{
+  height:100%;
+}
+
+#skills .row .col-sm-6 
+{
+  max-height:100%;
+  padding:30px 20px 30px 20px;
+  
+}
+
+#skills .row .col-sm-6 .jumbotron
+{
+  height:100%;
+  width:100%;
+  max-height:100%;
+  max-width:100%;
+  margin:0px;
+  padding:15px 10px 10px 10px;
+  text-align:center;
+  background-color:#1d1d1d;
+}
+
+#wrapper
+{
+   width:100%;
+   height:100%;
+   display:table;
+}
+
+.arrange 
+{
+   display:table-row;
+}
+
+.cell 
+{
+   display:table-cell;
+}
+
+#first .cell
+{   
+  height:1%;
+}
+
+#second .cell
+{
+    height:99%;
+    background-image: url('{{site.url}}/img/skillsChart2.jpg');
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+}
+
+
+#skills .row .col-sm-6 .jumbotron  .lead
+{
+  padding-bottom:10px;
+  color:white;
+  border-bottom: 1px solid #FFFFFF;
+  border-bottom-color: rgba(255,255,255,0.5);  
+}
+
+
+
+/************************************** skills **************************************/
+
+/************************************** media queries *******************************/
 
 @media (max-width: 767px) 
 {
@@ -155,83 +313,51 @@ img
   {
     padding-bottom: 5px;
   }
+  .row .col-sm-6
+  {
+    height:50%;
+  }
+  #wrapper
+  {
+    padding-left:30px;
+    padding-right:30px;
+  }
 }
 
-.container
-{
-  text-align: center;
-  //padding-top: 18px;
-  padding-top: 2%;
-}
+/************************************** media queries *******************************/
 
-.container h1
-{
-  font-family: 'Lato', sans-serif; 
-  color: $white_color;
-  //padding-bottom: 10px; 
-  padding-bottom: 1%; 
-  border-bottom: 1px solid #FFFFFF;
-  border-bottom-color: rgba(255,255,255,0.35);  
-  display:inline-block; 
-}
-.container .lead 
-{
-    font-family: 'Arvo', serif;
-    font-size: 20px;
-}
-#social-icons > li > a
-{
-    font-size: 3em;
-    color: $white_color;
-}
+/************************************** animation ***********************************/
 
-#social-icons > li > a:hover
+@keyframes wiggle 
 {
-    color: $yellow_color;
-}
-
-.scroll-down .glyphicon { 
-  color: $yellow_color; 
-  //padding-top: 10px; 
-  padding-top: 5%; 
-  animation-name: wiggle;
-  animation-duration: 1.2s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-}
-.scroll-down:hover .glyphicon 
-{ 
-  padding-top: 25px; 
-  color: $white_color;
-}
-
-@keyframes wiggle {
-    0% {
+    0% 
+    {
         padding-top: 8px;
-        //padding-top: 0.25%;
     }
-    50% {
+    50% 
+    {
         padding-top: 15px;
-        //padding-top: 2.5%;
     }
-    100% {
+    100% 
+    {
         padding-top: 8px;
-        //padding-top: 0.25%;
     }
 }
 
-@-webkit-keyframes wiggle {
-   0% {
+@-webkit-keyframes wiggle 
+{
+    0% 
+    {
         padding-top: 8px;
-        //padding-top: 0.25%;
     }
-    50% {
+    50% 
+    {
         padding-top: 15px;
-        //padding-top: 2.5%;
     }
-    100% {
+    100% 
+    {
         padding-top: 8px;
-        //padding-top: 0.25%;
     }
 }
+
+/************************************** animation ***********************************/
