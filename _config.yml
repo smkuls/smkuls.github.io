@@ -12,7 +12,7 @@ admin_name: Samarth Kulshreshtha
 description: > # this is to ignore newlines until "baseurl:"
         localhost@SamarthKulshreshtha
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "http://smkuls.github.io" # the base hostname & protocol for your site
+url: "https://smkuls.github.io" # the base hostname & protocol for your site
 twitter_username: smkuls
 github_username:  smkuls
 
